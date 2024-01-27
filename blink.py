@@ -58,14 +58,14 @@ while True:
         if blinkCounter==4:
             blinkCounter=0
             sleepCounts=0
-            account_sid = 'ACfe5338196cd37b73560631ba6f1d08c6'
-            auth_token = '04a4ec7d072c1993ba872e84140ade62'
+            account_sid = 'replace with urs'
+            auth_token = 'replace with your token'
             client = Client(account_sid, auth_token)
 
             message = client.messages.create(
                 from_='+12484879022',
-                body='gundu',
-                to='+918248045371'
+                body='hi',
+                to='your number'
             )
 
             print(message.sid)
